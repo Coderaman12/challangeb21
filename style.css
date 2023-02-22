@@ -1,0 +1,251 @@
+@font-face {
+    font-family: sl;
+    src: url(Satoshi-Light.ttf);
+}
+@font-face {
+    font-family:sm ;
+    src: url(Satoshi-Medium.ttf);
+}
+@font-face {
+    font-family:sv ;
+    src: url(Satoshi-Variable.ttf);
+}
+@font-face {
+    font-family: al;
+    src: url(Austin-Light-Web.woff2);
+}
+@font-face {
+    font-family: alw;
+    src: url(Austin-LightItalic-Web.woff2);
+}
+
+
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html.body{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+#main{
+    width: 100%;
+    background-color: #D2D3C3;
+}
+#home{
+    width: 100%;
+    height: 200vh;
+    position: relative;
+    overflow: hidden;
+    
+}
+#home-line{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    gap:25vw;
+}
+.line{
+    height:120vh;   
+    width: 1px;
+    background-color:#ffffffb4;
+    display:inline-flex;
+    margin: 0 .7vw;
+}
+#home>h1{
+    position: absolute;
+    font-size: 11vw;
+    text-transform: capitalize;
+    font-weight: 100;
+    font-family: al;
+    top: 20%;
+    left:60%;
+    transform: translate(-50%, -50%);
+    line-height: .9;
+    z-index: 99;
+}
+#home h1 span:nth-child(1){
+    position: absolute;
+    left: -35%;
+}
+
+#home-nav{
+    position: absolute;
+    width: 100%;
+    height: 20vh;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2vw;
+    z-index: 9;
+}
+#home-nav a{
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #000;
+    font-family: sv;
+    font-weight: 200;
+    font-size: 1vw;
+}
+#right-nav{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+    padding: 1.2vw 2vw;
+    border-radius: 50px;
+    background-color:#F5F5EB;
+}
+#right-nav img{
+    width: 2vw;
+}
+#left-nav{
+    display: flex;
+    align-items: center;
+    gap: 1.2vw;
+}
+
+#left-1 {
+    display: flex;
+    align-items: center;
+    gap: .1vw;
+
+}
+#left-1 a{
+    padding: 1.1vw 2vw;
+}
+#left-1 a:nth-child(1){
+    /* padding: 1.1vw 2vw; */
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    background-color:#F5F5EB;
+}
+#left-1 a:nth-child(2){
+    /* padding: 1.1vw 2vw; */
+    /* border-radius: 50px; */
+    background-color:#F5F5EB;
+}
+#left-1 a:nth-child(3){
+    /* padding: 1.1vw 2vw; */
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    background-color:#F5F5EB;
+}
+
+#left-2{
+    display: flex;
+    align-items: center;
+    gap: 1.1vw;
+    padding: 1.2vw 3vw;
+    border-radius: 50px;
+    background-color:#51733F;
+}
+#left-2 a{
+    color: #fff;
+}
+#c-circle{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    top: 15%;  
+    /* background-color: red; */
+}
+#circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+#circle img {
+    width: 35vw;
+    z-index: 9;
+    /* background-color: #000; */
+}
+#s-circle{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, 8%);
+    width: 90vw;
+    height: 90vw;
+    background-color: #fff;
+    clip-path: circle(50% at 50% 0%);
+}
+#s-circle p{
+    position: absolute;
+    width: 60%;
+    /* background-color: antiquewhite; */
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5vw;
+    text-align: center;
+    font-family:voyage;
+    font-weight: 100;
+    line-height: 1
+    
+}
+#s-circle p span img{
+    position: absolute;
+    top: 32%; 
+    width: 14vw;
+}
+#s-circle #line{
+    position:absolute;
+    top: 29.8vw;
+    left: 44%;
+    width: 12%;
+    height: .3vw;
+    background-color: #7BA74B;
+}
+
+
+
+@media(max-width:500px){
+    #home-nav{
+        height: 5vh;
+    }
+    #home-nav a{
+        font-size: 2.2vw;
+    }
+    #left-nav{
+        gap: 2vw;
+    }
+    #left-1 {
+        gap:.2vw;
+    }
+    #left-1 a{
+        padding: 1.3vw 2vw;
+    }
+    #left-2{
+        padding: 1.3vw 3vw;
+    }
+
+    #home{
+        height: 200vh;
+    }
+    #home>h1{
+        font-size: 20vw;    
+        top: 25%;
+        line-height: 1;
+    }
+    #c-circle{
+        height: 25vh;
+        top: 35%;  
+    }
+
+    #circle img {
+        width: 40vw;
+    }
+    .line{
+        height:100vh;   
+        margin: 0 .2vw;
+    }
+}
